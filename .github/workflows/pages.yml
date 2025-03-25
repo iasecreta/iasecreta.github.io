@@ -16,21 +16,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-
-      - name: Install dependencies
-        run: |
-          cd caminho/para/seu/diretorio
-          npm install
-
-      - name: Build project
-        run: |
-          cd caminho/para/seu/diretorio
-          npm run build
-
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1
         with:

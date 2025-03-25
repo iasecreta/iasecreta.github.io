@@ -18,9 +18,6 @@ jobs:
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
 
       - name: Set output example
         run: echo "variable_name=value" >> $GITHUB_ENV

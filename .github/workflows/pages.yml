@@ -18,6 +18,11 @@ jobs:
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1
+        with:
+          artifact_name: github-pages
+          preview: false
 
       - name: Set output example
         run: echo "variable_name=value" >> $GITHUB_ENV
+        
+Atualizar workflow para deploy no GitHyb Pages
